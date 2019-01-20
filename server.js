@@ -10,3 +10,9 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}...`);
 });
+
+//Login WebService
+app.get('/login', (req, res) => {
+
+    res.send('Implementing Login Service');
+});
