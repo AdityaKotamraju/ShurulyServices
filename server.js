@@ -17,6 +17,6 @@ app.listen(PORT, () => {
 //Login WebService
 app.get('/login', (req, res) => {
 
-    res.send(req.body);
-    // res.send('Implementing Login Service');
+    console.log(req.body);
+    res.send('Implementing Login Service');
 });
