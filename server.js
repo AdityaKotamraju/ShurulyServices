@@ -1,5 +1,8 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
     res.send('Hello from App Engine!');
@@ -14,5 +17,6 @@ app.listen(PORT, () => {
 //Login WebService
 app.get('/login', (req, res) => {
 
-    res.send('Implementing Login Service');
+    res.send(req.body);
+    // res.send('Implementing Login Service');
 });
