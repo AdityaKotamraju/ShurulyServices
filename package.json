@@ -1,0 +1,15 @@
+{
+  "name": "shuruly",
+  "version": "1.0.0",
+  "description": "NodeJS RESTful Webservices",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+      "express": "~4.16.4"
+  },
+  "author": "Aditya Kotamraju",
+  "license": "ISC"
+}
